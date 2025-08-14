@@ -48,7 +48,7 @@ def issue_card(issue: Issue):
     with st.container(border=True):
         st.subheader(issue.issue_title)
         st.write(
-            f"Repository: [{issue.issue_repo.repo_name}]({issue.issue_repo.repo_url})"
+            f"Repository: [{issue.issue_repo.owner.repo_owner}/{issue.issue_repo.repo_name}]({issue.issue_repo.repo_url})"
         )
         desc = issue.issue_repo.repo_desc
         if desc:
