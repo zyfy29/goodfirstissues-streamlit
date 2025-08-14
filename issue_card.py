@@ -24,7 +24,7 @@ def label_to_badge(label: str) -> str:
 
 
 def language_to_badge(language: str) -> str:
-    return f":blue-badge[:material/code: {language.title()}]"
+    return f":blue-badge[{language.title()}]"
 
 
 def format_relative_time(created_at: datetime) -> str:
@@ -53,8 +53,10 @@ def issue_card(issue: Issue):
         )
         desc = issue.issue_repo.repo_desc
         if desc:
-            st.caption(f"Description: {issue.issue_repo.repo_desc}")
-        st.write(format_relative_time(issue.issue_created_at))
+            st.write(f"Description: {issue.issue_repo.repo_desc}")
+        st.caption(format_relative_time(issue.issue_created_at))
+        st.write(
+            f":material/star: {issue.issue_repo.repo_stars} :material/comment: {issue.comments.issue_comment_count}")
         labels_markdown = "Labels: " + " ".join(
             [label_to_badge(label.label_name) for label in issue.issue_labels.nodes]
         )
