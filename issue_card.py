@@ -6,6 +6,7 @@ from models import Issue
 
 def label_to_badge(label: str) -> str:
     label = label.lower().strip()
+    # https://docs.streamlit.io/develop/api-reference/text/st.badge
     # colors: blue, green, orange, red, violet, gray
     # badges: good first issue, help wanted, bug, enhancement, documentation
     if label == "good first issue":
@@ -52,7 +53,7 @@ def issue_card(issue: Issue):
         )
         desc = issue.issue_repo.repo_desc
         if desc:
-            st.write(f"Description: {issue.issue_repo.repo_desc}")
+            st.caption(f"Description: {issue.issue_repo.repo_desc}")
         st.write(format_relative_time(issue.issue_created_at))
         labels_markdown = "Labels: " + " ".join(
             [label_to_badge(label.label_name) for label in issue.issue_labels.nodes]

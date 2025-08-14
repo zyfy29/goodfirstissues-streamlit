@@ -3,7 +3,13 @@ import streamlit as st
 import requests
 
 from issue_card import issue_card
+from issue_filter import IssueFilter, MultiselectMode
 from models import Issue
+
+st.set_page_config(
+    page_title="Good First Issues",
+    page_icon=":material/thumb_up:",
+)
 
 
 def is_issue_valid(issue: Issue) -> bool:
@@ -31,17 +37,45 @@ def get_issues(url) -> list[Issue]:
 
 issues_response = get_issues(st.secrets.data_url)
 
-st.set_page_config(
-    page_title="Good First Issues",
-    page_icon=":material/thumb_up:",
-)
+all_languages = set()
+for issue in issues_response:
+    for lang in issue.issue_repo.repo_langs.nodes:
+        all_languages.add(lang.repo_prog_language)
 
 with st.sidebar:
-    st.info("Filters", icon=":material/filter_list:")
+    st.subheader(":material/filter_list: Filters")
+    with st.container(border=True):
+        st.multiselect(
+            "Programming Languages",
+            options=sorted(all_languages),
+            key="languages",
+            help="Filter issues by programming languages.",
+        )
+        st.segmented_control(
+            "Multi select mode",
+            options=[MultiselectMode.OR, MultiselectMode.AND],
+            format_func=lambda x: x.value,
+            key="language_multiselect_mode",
+            default=MultiselectMode.OR
+        )
+
+    with st.container(border=True):
+        st.toggle("Hide assigned", key="hide_assigned")
+
     st.divider()
-    st.info("Sort", icon=":material/sort:")
+    st.subheader(":material/sort: Sort")
+    with st.container(border=True):
+        st.write("Sorting options will be available soon!")
 
 st.title("Good First Issues")
 
-for issue in issues_response:
+issue_filter = IssueFilter(
+    languages=st.session_state.languages,
+    language_multiselect_mode=st.session_state.language_multiselect_mode,
+    hide_assigned=st.session_state.hide_assigned,
+)
+issues_to_display = issue_filter.filter_issues(issues_response)
+
+st.caption(f"Found {len(issues_to_display)} issues.")
+for issue in issue_filter.filter_issues(issues_response):
     issue_card(issue)
