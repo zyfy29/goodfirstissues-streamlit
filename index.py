@@ -35,10 +35,11 @@ def get_issues(url) -> list[Issue]:
     return res
 
 
-issues_response = get_issues(st.secrets.data_url)
+if 'issues_response' not in st.session_state:
+    st.session_state.issues_response = get_issues(st.secrets.data_url)
 
 all_languages = set()
-for issue in issues_response:
+for issue in st.session_state.issues_response:
     for lang in issue.issue_repo.repo_langs.nodes:
         all_languages.add(lang.repo_prog_language)
 
@@ -74,8 +75,8 @@ issue_filter = IssueFilter(
     language_multiselect_mode=st.session_state.language_multiselect_mode,
     hide_assigned=st.session_state.hide_assigned,
 )
-issues_to_display = issue_filter.filter_issues(issues_response)
+issues_to_display = issue_filter.filter_issues(st.session_state.issues_response)
 
 st.caption(f"Found {len(issues_to_display)} issues.")
-for issue in issue_filter.filter_issues(issues_response):
+for issue in issue_filter.filter_issues(st.session_state.issues_response):
     issue_card(issue)
