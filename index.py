@@ -18,7 +18,7 @@ def is_issue_valid(issue: Issue) -> bool:
     return True
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=600)
 def get_issues(url) -> list[Issue]:
     response = requests.get(url)
     response.raise_for_status()
