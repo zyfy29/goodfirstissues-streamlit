@@ -52,12 +52,10 @@ with st.sidebar:
             key="languages",
             help="Filter issues by programming languages.",
         )
-        st.segmented_control(
-            "Multi select mode",
-            options=[MultiselectMode.OR, MultiselectMode.AND],
-            format_func=lambda x: x.value,
-            key="language_multiselect_mode",
-            default=MultiselectMode.OR
+        # TODO: using st.segmented_control here will cause ridiculous UI issues, report this to streamlit
+        st.toggle(
+            "Allow Either",
+            key="allow_either",
         )
 
     with st.container(border=True):
@@ -72,7 +70,7 @@ st.title("Good First Issues")
 
 issue_filter = IssueFilter(
     languages=st.session_state.languages,
-    language_multiselect_mode=st.session_state.language_multiselect_mode,
+    language_multiselect_mode=MultiselectMode.OR if st.session_state.allow_either else MultiselectMode.AND,
     hide_assigned=st.session_state.hide_assigned,
 )
 issues_to_display = issue_filter.filter_issues(st.session_state.issues_response)
