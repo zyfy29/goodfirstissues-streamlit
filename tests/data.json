@@ -1,0 +1,417 @@
+[
+  {
+    "Issue": {
+      "issue_url": "https://github.com/testorg/go-web-framework/issues/15",
+      "issue_createdAt": "2025-08-16T06:30:00Z",
+      "issue_repo": {
+        "repo_name": "go-web-framework",
+        "repo_desc": "Lightweight web framework for Go applications",
+        "repo_url": "https://github.com/testorg/go-web-framework",
+        "repo_stars": 245,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Go"
+            },
+            {
+              "repo_prog_language": "JavaScript"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "testorg"
+        }
+      },
+      "issue_title": "Test Case: Go framework with good first issue label",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "good first issue"
+          }
+        ],
+        "label_totalcount": 1
+      },
+      "Comments": {
+        "issue_comment_count": 3
+      },
+      "Assignees": {
+        "issue_assignees_count": 0
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/devteam/python-ml-toolkit/issues/42",
+      "issue_createdAt": "2025-08-16T05:45:00Z",
+      "issue_repo": {
+        "repo_name": "python-ml-toolkit",
+        "repo_desc": "Machine learning toolkit for Python developers",
+        "repo_url": "https://github.com/devteam/python-ml-toolkit",
+        "repo_stars": 1523,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Python"
+            },
+            {
+              "repo_prog_language": "Jupyter Notebook"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "devteam"
+        }
+      },
+      "issue_title": "Test Case: Python project with help wanted label",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "help wanted"
+          }
+        ],
+        "label_totalcount": 1
+      },
+      "Comments": {
+        "issue_comment_count": 7
+      },
+      "Assignees": {
+        "issue_assignees_count": 1
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/opensource/go-microservice/issues/88",
+      "issue_createdAt": "2025-08-16T04:20:00Z",
+      "issue_repo": {
+        "repo_name": "go-microservice",
+        "repo_desc": "Microservice architecture implementation in Go",
+        "repo_url": "https://github.com/opensource/go-microservice",
+        "repo_stars": 789,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Go"
+            },
+            {
+              "repo_prog_language": "Docker"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "opensource"
+        }
+      },
+      "issue_title": "Test Case: Go project with both good first issue and documentation labels",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "good first issue"
+          },
+          {
+            "label_name": "documentation"
+          }
+        ],
+        "label_totalcount": 2
+      },
+      "Comments": {
+        "issue_comment_count": 2
+      },
+      "Assignees": {
+        "issue_assignees_count": 0
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/community/python-api-server/issues/156",
+      "issue_createdAt": "2025-08-16T03:55:00Z",
+      "issue_repo": {
+        "repo_name": "python-api-server",
+        "repo_desc": "RESTful API server built with Python and FastAPI",
+        "repo_url": "https://github.com/community/python-api-server",
+        "repo_stars": 432,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Python"
+            },
+            {
+              "repo_prog_language": "Shell"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "community"
+        }
+      },
+      "issue_title": "Test Case: Python project with documentation label only",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "documentation"
+          }
+        ],
+        "label_totalcount": 1
+      },
+      "Comments": {
+        "issue_comment_count": 12
+      },
+      "Assignees": {
+        "issue_assignees_count": 2
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/techstartup/go-cli-tools/issues/23",
+      "issue_createdAt": "2025-08-16T02:30:00Z",
+      "issue_repo": {
+        "repo_name": "go-cli-tools",
+        "repo_desc": "Collection of command-line tools written in Go",
+        "repo_url": "https://github.com/techstartup/go-cli-tools",
+        "repo_stars": 67,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Go"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "techstartup"
+        }
+      },
+      "issue_title": "Test Case: Go project with help wanted and documentation labels",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "help wanted"
+          },
+          {
+            "label_name": "documentation"
+          }
+        ],
+        "label_totalcount": 2
+      },
+      "Comments": {
+        "issue_comment_count": 5
+      },
+      "Assignees": {
+        "issue_assignees_count": 0
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/airesearch/python-nlp-lib/issues/91",
+      "issue_createdAt": "2025-08-16T01:15:00Z",
+      "issue_repo": {
+        "repo_name": "python-nlp-lib",
+        "repo_desc": "Natural language processing library for Python",
+        "repo_url": "https://github.com/airesearch/python-nlp-lib",
+        "repo_stars": 2156,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Python"
+            },
+            {
+              "repo_prog_language": "C++"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "airesearch"
+        }
+      },
+      "issue_title": "Test Case: Python project with all three labels (good first issue, help wanted, documentation)",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "good first issue"
+          },
+          {
+            "label_name": "help wanted"
+          },
+          {
+            "label_name": "documentation"
+          }
+        ],
+        "label_totalcount": 3
+      },
+      "Comments": {
+        "issue_comment_count": 8
+      },
+      "Assignees": {
+        "issue_assignees_count": 1
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/backend/go-database-orm/issues/134",
+      "issue_createdAt": "2025-08-15T23:45:00Z",
+      "issue_repo": {
+        "repo_name": "go-database-orm",
+        "repo_desc": "Object-relational mapping library for Go databases",
+        "repo_url": "https://github.com/backend/go-database-orm",
+        "repo_stars": 1024,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Go"
+            },
+            {
+              "repo_prog_language": "SQL"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "backend"
+        }
+      },
+      "issue_title": "Test Case: Go project with good first issue and help wanted labels",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "good first issue"
+          },
+          {
+            "label_name": "help wanted"
+          }
+        ],
+        "label_totalcount": 2
+      },
+      "Comments": {
+        "issue_comment_count": 15
+      },
+      "Assignees": {
+        "issue_assignees_count": 0
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/datascience/python-analytics/issues/67",
+      "issue_createdAt": "2025-08-15T22:20:00Z",
+      "issue_repo": {
+        "repo_name": "python-analytics",
+        "repo_desc": "Data analytics and visualization tools for Python",
+        "repo_url": "https://github.com/datascience/python-analytics",
+        "repo_stars": 3421,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Python"
+            },
+            {
+              "repo_prog_language": "R"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "datascience"
+        }
+      },
+      "issue_title": "Test Case: High-star Python project with good first issue label",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "good first issue"
+          }
+        ],
+        "label_totalcount": 1
+      },
+      "Comments": {
+        "issue_comment_count": 4
+      },
+      "Assignees": {
+        "issue_assignees_count": 3
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/webdev/go-http-router/issues/45",
+      "issue_createdAt": "2025-08-15T21:00:00Z",
+      "issue_repo": {
+        "repo_name": "go-http-router",
+        "repo_desc": "Fast HTTP router for Go web applications",
+        "repo_url": "https://github.com/webdev/go-http-router",
+        "repo_stars": 156,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Go"
+            },
+            {
+              "repo_prog_language": "Makefile"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "webdev"
+        }
+      },
+      "issue_title": "Test Case: Low-star Go project with help wanted label only",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "help wanted"
+          }
+        ],
+        "label_totalcount": 1
+      },
+      "Comments": {
+        "issue_comment_count": 1
+      },
+      "Assignees": {
+        "issue_assignees_count": 0
+      }
+    }
+  },
+  {
+    "Issue": {
+      "issue_url": "https://github.com/mixedlang/polyglot-project/issues/78",
+      "issue_createdAt": "2025-08-15T20:30:00Z",
+      "issue_repo": {
+        "repo_name": "polyglot-project",
+        "repo_desc": "Multi-language project with Go and Python components",
+        "repo_url": "https://github.com/mixedlang/polyglot-project",
+        "repo_stars": 512,
+        "repo_langs": {
+          "Nodes": [
+            {
+              "repo_prog_language": "Go"
+            },
+            {
+              "repo_prog_language": "Python"
+            },
+            {
+              "repo_prog_language": "JavaScript"
+            }
+          ]
+        },
+        "Owner": {
+          "repo_owner": "mixedlang"
+        }
+      },
+      "issue_title": "Test Case: Multi-language project (Go+Python) with documentation label",
+      "issue_labels": {
+        "Nodes": [
+          {
+            "label_name": "documentation"
+          }
+        ],
+        "label_totalcount": 1
+      },
+      "Comments": {
+        "issue_comment_count": 6
+      },
+      "Assignees": {
+        "issue_assignees_count": 1
+      }
+    }
+  }
+]
